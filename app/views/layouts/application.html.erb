@@ -11,10 +11,12 @@
   </head>
 
   <body>
-    <%= render 'helper/menu' %>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
-    </main>
-    <%= render 'helper/footer' %>
+    <div class="container pl-10 pr-10">
+      <%= render 'helper/menu' %>
+      <main class="container mx-auto mt-28 px-5 flex">
+        <%= yield %>
+      </main>
+      <%= render 'helper/footer' %> 
+    </div>
   </body>
 </html>
